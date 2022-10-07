@@ -72,6 +72,14 @@
 		871C5AF028E88EDB000BC7AB /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				8792CE4828EE00ED008CAC9B /* Registration */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		8792CE4828EE00ED008CAC9B /* Registration */ = {
+			isa = PBXGroup;
+			children = (
 				871C5AFE28E9A9B0000BC7AB /* StartViewController.swift */,
 				87E35DB728EC346100BA4DD5 /* StViewController.swift */,
 				871C5B0028E9AA8B000BC7AB /* SignInViewController.swift */,
@@ -79,7 +87,7 @@
 				879569BF28EAA4E90028805B /* ForgotPassViewController.swift */,
 				87FC939728EA0F3300E512E3 /* VerificationService.swift */,
 			);
-			path = Controllers;
+			path = Registration;
 			sourceTree = "<group>";
 		};
 		87D9579228E850B100BFD9AE = {
