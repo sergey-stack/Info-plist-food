@@ -15,6 +15,9 @@
 		871C5AFF28E9A9B0000BC7AB /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 871C5AFE28E9A9B0000BC7AB /* StartViewController.swift */; };
 		871C5B0128E9AA8B000BC7AB /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 871C5B0028E9AA8B000BC7AB /* SignInViewController.swift */; };
 		871C5B0328E9AD39000BC7AB /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 871C5B0228E9AD39000BC7AB /* SignUpViewController.swift */; };
+		87567F8828F2EE9800493540 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87567F8728F2EE9800493540 /* OnboardingViewController.swift */; };
+		87567F8A28F2F3BC00493540 /* OnboardingSlide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87567F8928F2F3BC00493540 /* OnboardingSlide.swift */; };
+		87567F8D28F2F7A500493540 /* OnboardingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87567F8C28F2F7A500493540 /* OnboardingCollectionViewCell.swift */; };
 		879569C028EAA4E90028805B /* ForgotPassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 879569BF28EAA4E90028805B /* ForgotPassViewController.swift */; };
 		87D9579F28E850B100BFD9AE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D9579E28E850B100BFD9AE /* AppDelegate.swift */; };
 		87D957A128E850B100BFD9AE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D957A028E850B100BFD9AE /* SceneDelegate.swift */; };
@@ -31,6 +34,9 @@
 		871C5AFE28E9A9B0000BC7AB /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
 		871C5B0028E9AA8B000BC7AB /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		871C5B0228E9AD39000BC7AB /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		87567F8728F2EE9800493540 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
+		87567F8928F2F3BC00493540 /* OnboardingSlide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingSlide.swift; sourceTree = "<group>"; };
+		87567F8C28F2F7A500493540 /* OnboardingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCollectionViewCell.swift; sourceTree = "<group>"; };
 		879569BF28EAA4E90028805B /* ForgotPassViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPassViewController.swift; sourceTree = "<group>"; };
 		87D9579B28E850B100BFD9AE /* InfoPlistFood.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InfoPlistFood.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		87D9579E28E850B100BFD9AE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -72,9 +78,27 @@
 		871C5AF028E88EDB000BC7AB /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				87567F8628F2EE6900493540 /* Onboarding */,
 				8792CE4828EE00ED008CAC9B /* Registration */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		87567F8628F2EE6900493540 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				87567F8728F2EE9800493540 /* OnboardingViewController.swift */,
+				87567F8C28F2F7A500493540 /* OnboardingCollectionViewCell.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		87567F8B28F2F43800493540 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				87567F8928F2F3BC00493540 /* OnboardingSlide.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		8792CE4828EE00ED008CAC9B /* Registration */ = {
@@ -110,6 +134,7 @@
 			isa = PBXGroup;
 			children = (
 				87E575DC28EAFD4E000AA3E0 /* InfoPlistFood.entitlements */,
+				87567F8B28F2F43800493540 /* Models */,
 				871C5AF028E88EDB000BC7AB /* Controllers */,
 				871C5AEF28E88EC9000BC7AB /* Views */,
 				87D957A928E850B700BFD9AE /* LaunchScreen.storyboard */,
@@ -212,6 +237,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				87567F8A28F2F3BC00493540 /* OnboardingSlide.swift in Sources */,
 				87D9579F28E850B100BFD9AE /* AppDelegate.swift in Sources */,
 				871C5AFF28E9A9B0000BC7AB /* StartViewController.swift in Sources */,
 				879569C028EAA4E90028805B /* ForgotPassViewController.swift in Sources */,
@@ -219,7 +245,9 @@
 				871C5B0128E9AA8B000BC7AB /* SignInViewController.swift in Sources */,
 				87D957A128E850B100BFD9AE /* SceneDelegate.swift in Sources */,
 				871C5B0328E9AD39000BC7AB /* SignUpViewController.swift in Sources */,
+				87567F8828F2EE9800493540 /* OnboardingViewController.swift in Sources */,
 				87E35DB828EC346100BA4DD5 /* StViewController.swift in Sources */,
+				87567F8D28F2F7A500493540 /* OnboardingCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
