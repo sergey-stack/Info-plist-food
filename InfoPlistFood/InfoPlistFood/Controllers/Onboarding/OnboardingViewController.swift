@@ -41,10 +41,13 @@ class OnboardingViewController: UIViewController {
     
     @IBAction func nextAction(_ sender: UIButton) {
         if currentPage == slides.count - 1 {//равына ли текущая стр кол-ву слайдов
-            let controller = storyboard?.instantiateViewController(identifier: "HomeVC") as! OnboardingViewController
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            let controller = storyboard.instantiateViewController(identifier: "HomeVC")
             controller.modalPresentationStyle = .fullScreen
             controller.modalTransitionStyle = .flipHorizontal
             present(controller, animated: true, completion: nil)
+            
+            
         }else {
             currentPage += 1
             let indexPath = IndexPath(item: currentPage, section: 0)
