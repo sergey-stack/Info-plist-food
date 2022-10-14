@@ -119,6 +119,11 @@
                                                 <rect key="frame" x="86" y="58" width="171.5" height="31"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="Forgot your password?"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <integer key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
                                                 <connections>
                                                     <segue destination="ZK4-jh-uxO" kind="show" id="wyg-br-Te1"/>
                                                 </connections>
@@ -184,6 +189,11 @@
                                         <buttonConfiguration key="configuration" style="plain" title="Reset">
                                             <fontDescription key="titleFontDescription" type="italicSystem" pointSize="27"/>
                                         </buttonConfiguration>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <integer key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                         <connections>
                                             <action selector="forgotPassAction:" destination="ZK4-jh-uxO" eventType="touchUpInside" id="5gn-Uj-Q9D"/>
                                         </connections>
@@ -252,6 +262,11 @@
                                 <buttonConfiguration key="configuration" style="plain" title="Sign In">
                                     <fontDescription key="titleFontDescription" type="italicSystem" pointSize="30"/>
                                 </buttonConfiguration>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="signInAction:" destination="gCG-6n-Juh" eventType="touchUpInside" id="mmq-PE-Gpi"/>
                                 </connections>
@@ -299,7 +314,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="7r5-FS-Rwq"/>
-                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
                     <navigationItem key="navigationItem" id="h6Z-a5-DGA"/>
                     <connections>
@@ -337,6 +352,11 @@
                                                     <buttonConfiguration key="configuration" style="gray" title="Sign In">
                                                         <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
                                                     </buttonConfiguration>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerPadius">
+                                                            <integer key="value" value="10"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
                                                     <connections>
                                                         <segue destination="gCG-6n-Juh" kind="show" id="OvD-08-SJ3"/>
                                                     </connections>
@@ -347,6 +367,11 @@
                                                     <buttonConfiguration key="configuration" style="gray" title="Sign Up">
                                                         <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
                                                     </buttonConfiguration>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                            <integer key="value" value="10"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
                                                     <connections>
                                                         <segue destination="MOJ-sY-clY" kind="show" id="KRJ-se-DvU"/>
                                                     </connections>

@@ -186,19 +186,23 @@
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Cfr-64-4CP">
+                                                    <collectionView multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Cfr-64-4CP">
                                                         <rect key="frame" x="0.0" y="48" width="428" height="120"/>
                                                         <color key="backgroundColor" systemColor="tertiarySystemGroupedBackgroundColor"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="120" id="Ngi-y1-O3q"/>
                                                         </constraints>
-                                                        <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="xDl-KF-LnC">
+                                                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="xDl-KF-LnC">
                                                             <size key="itemSize" width="128" height="128"/>
                                                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                            <inset key="sectionInset" minX="20" minY="0.0" maxX="20" maxY="0.0"/>
                                                         </collectionViewFlowLayout>
                                                         <cells/>
+                                                        <connections>
+                                                            <outlet property="dataSource" destination="l7N-AV-9qE" id="hDV-fF-PCc"/>
+                                                            <outlet property="delegate" destination="l7N-AV-9qE" id="xiU-cg-nxF"/>
+                                                        </connections>
                                                     </collectionView>
                                                 </subviews>
                                                 <color key="backgroundColor" systemColor="tertiarySystemBackgroundColor"/>
@@ -229,7 +233,7 @@
                             </scrollView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="WsV-aG-MOU"/>
-                        <color key="backgroundColor" systemColor="tertiarySystemGroupedBackgroundColor"/>
+                        <color key="backgroundColor" red="0.97647058823529409" green="0.97647058823529409" blue="0.97647058823529409" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="5JS-Ao-g9s" secondAttribute="bottom" id="Ws0-0a-5zE"/>
                             <constraint firstItem="5JS-Ao-g9s" firstAttribute="top" secondItem="WsV-aG-MOU" secondAttribute="top" id="htp-a3-7ap"/>
@@ -245,6 +249,7 @@
                     <connections>
                         <outlet property="categoryCollectionView" destination="uTk-gd-TXl" id="dXM-h9-9Zz"/>
                         <outlet property="popularCollectionView" destination="6z6-sp-UKs" id="nqs-co-XS4"/>
+                        <outlet property="specialsCollectionView" destination="Cfr-64-4CP" id="B8a-uo-dgS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tkr-oA-3EJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
