@@ -87,8 +87,8 @@
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5JS-Ao-g9s">
                                 <rect key="frame" x="0.0" y="88" width="428" height="838"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Ced-ht-KzW">
-                                        <rect key="frame" x="0.0" y="0.0" width="428" height="686"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Ced-ht-KzW">
+                                        <rect key="frame" x="0.0" y="0.0" width="428" height="726"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hlz-S8-OO6">
                                                 <rect key="frame" x="0.0" y="0.0" width="428" height="170"/>
@@ -104,7 +104,7 @@
                                                     </label>
                                                     <collectionView multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="uTk-gd-TXl">
                                                         <rect key="frame" x="0.0" y="48" width="428" height="122"/>
-                                                        <color key="backgroundColor" systemColor="systemGray3Color"/>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="122" id="rBE-F8-oqK"/>
                                                         </constraints>
@@ -121,7 +121,7 @@
                                                         </connections>
                                                     </collectionView>
                                                 </subviews>
-                                                <color key="backgroundColor" systemColor="systemGray3Color"/>
+                                                <color key="backgroundColor" systemColor="tertiarySystemBackgroundColor"/>
                                                 <constraints>
                                                     <constraint firstItem="Ex9-Rf-XuL" firstAttribute="leading" secondItem="hlz-S8-OO6" secondAttribute="leading" constant="16" id="Khz-9z-JZT"/>
                                                     <constraint firstAttribute="trailing" secondItem="uTk-gd-TXl" secondAttribute="trailing" id="Ubi-IP-7fh"/>
@@ -133,7 +133,7 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wi8-la-Wc7">
-                                                <rect key="frame" x="0.0" y="170" width="428" height="348"/>
+                                                <rect key="frame" x="0.0" y="190" width="428" height="348"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Popular Dishes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Mc-Vh-v0b">
                                                         <rect key="frame" x="16" y="16" width="396" height="24"/>
@@ -144,22 +144,26 @@
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="6z6-sp-UKs">
+                                                    <collectionView multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="6z6-sp-UKs">
                                                         <rect key="frame" x="0.0" y="48" width="428" height="300"/>
-                                                        <color key="backgroundColor" systemColor="systemGray2Color"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="300" id="e99-pS-Af2"/>
                                                         </constraints>
-                                                        <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="BOW-3x-bRD">
+                                                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="0.0" id="BOW-3x-bRD">
                                                             <size key="itemSize" width="128" height="128"/>
                                                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                            <inset key="sectionInset" minX="20" minY="0.0" maxX="40" maxY="0.0"/>
                                                         </collectionViewFlowLayout>
                                                         <cells/>
+                                                        <connections>
+                                                            <outlet property="dataSource" destination="l7N-AV-9qE" id="ZZY-48-IQf"/>
+                                                            <outlet property="delegate" destination="l7N-AV-9qE" id="8Wv-MQ-p75"/>
+                                                        </connections>
                                                     </collectionView>
                                                 </subviews>
-                                                <color key="backgroundColor" systemColor="systemGray2Color"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstItem="5Mc-Vh-v0b" firstAttribute="leading" secondItem="Wi8-la-Wc7" secondAttribute="leading" constant="16" id="5af-ds-J8g"/>
                                                     <constraint firstItem="6z6-sp-UKs" firstAttribute="top" secondItem="5Mc-Vh-v0b" secondAttribute="bottom" constant="8" id="86r-c9-2vr"/>
@@ -171,7 +175,7 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cP7-RM-3ts">
-                                                <rect key="frame" x="0.0" y="518" width="428" height="168"/>
+                                                <rect key="frame" x="0.0" y="558" width="428" height="168"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Shef's Specials" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XHA-EX-2NI">
                                                         <rect key="frame" x="16" y="16" width="396" height="24"/>
@@ -184,7 +188,7 @@
                                                     </label>
                                                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Cfr-64-4CP">
                                                         <rect key="frame" x="0.0" y="48" width="428" height="120"/>
-                                                        <color key="backgroundColor" systemColor="systemGray2Color"/>
+                                                        <color key="backgroundColor" systemColor="tertiarySystemGroupedBackgroundColor"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="120" id="Ngi-y1-O3q"/>
                                                         </constraints>
@@ -197,7 +201,7 @@
                                                         <cells/>
                                                     </collectionView>
                                                 </subviews>
-                                                <color key="backgroundColor" systemColor="systemGray2Color"/>
+                                                <color key="backgroundColor" systemColor="tertiarySystemBackgroundColor"/>
                                                 <constraints>
                                                     <constraint firstItem="Cfr-64-4CP" firstAttribute="leading" secondItem="cP7-RM-3ts" secondAttribute="leading" id="2ie-p4-vpl"/>
                                                     <constraint firstAttribute="trailing" secondItem="XHA-EX-2NI" secondAttribute="trailing" constant="16" id="80l-Ts-ij3"/>
@@ -209,9 +213,10 @@
                                                 </constraints>
                                             </view>
                                         </subviews>
+                                        <color key="backgroundColor" systemColor="tertiarySystemGroupedBackgroundColor"/>
                                     </stackView>
                                 </subviews>
-                                <color key="backgroundColor" systemColor="systemGray3Color"/>
+                                <color key="backgroundColor" systemColor="tertiarySystemGroupedBackgroundColor"/>
                                 <constraints>
                                     <constraint firstItem="Ced-ht-KzW" firstAttribute="leading" secondItem="5JS-Ao-g9s" secondAttribute="leading" id="G2J-XW-Y5X"/>
                                     <constraint firstAttribute="trailing" secondItem="Ced-ht-KzW" secondAttribute="trailing" id="R1f-et-6Dg"/>
@@ -224,7 +229,7 @@
                             </scrollView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="WsV-aG-MOU"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="tertiarySystemGroupedBackgroundColor"/>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="5JS-Ao-g9s" secondAttribute="bottom" id="Ws0-0a-5zE"/>
                             <constraint firstItem="5JS-Ao-g9s" firstAttribute="top" secondItem="WsV-aG-MOU" secondAttribute="top" id="htp-a3-7ap"/>
@@ -239,11 +244,12 @@
                     </navigationItem>
                     <connections>
                         <outlet property="categoryCollectionView" destination="uTk-gd-TXl" id="dXM-h9-9Zz"/>
+                        <outlet property="popularCollectionView" destination="6z6-sp-UKs" id="nqs-co-XS4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tkr-oA-3EJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-513" y="-965"/>
+            <point key="canvasLocation" x="-513.08411214953264" y="-965.44276457883382"/>
         </scene>
         <!--Onboarding View Controller-->
         <scene sceneID="IvV-Yp-m0m">
@@ -437,12 +443,6 @@
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
-        <systemColor name="systemGray2Color">
-            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemGray3Color">
-            <color red="0.7803921568627451" green="0.7803921568627451" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
         <systemColor name="systemPinkColor">
             <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
@@ -451,6 +451,12 @@
         </systemColor>
         <systemColor name="systemTealColor">
             <color red="0.18823529411764706" green="0.69019607843137254" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="tertiarySystemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="tertiarySystemGroupedBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
