@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8704AFBF28FB02E400E3AB08 /* DishDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8704AFBE28FB02E400E3AB08 /* DishDetailViewController.swift */; };
+		8704AFC128FB059400E3AB08 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8704AFC028FB059400E3AB08 /* UIViewController+Extension.swift */; };
 		871C5AF428E892FE000BC7AB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 871C5AF328E892FE000BC7AB /* GoogleService-Info.plist */; };
 		871C5AF728E898C9000BC7AB /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 871C5AF628E898C9000BC7AB /* FirebaseAnalytics */; };
 		871C5AF928E898C9000BC7AB /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 871C5AF828E898C9000BC7AB /* FirebaseAuth */; };
@@ -42,6 +44,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8704AFBE28FB02E400E3AB08 /* DishDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishDetailViewController.swift; sourceTree = "<group>"; };
+		8704AFC028FB059400E3AB08 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 		871C5AF328E892FE000BC7AB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		871C5AFE28E9A9B0000BC7AB /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
 		871C5B0028E9AA8B000BC7AB /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
@@ -90,6 +94,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8704AFBD28FB028C00E3AB08 /* Dish Detail */ = {
+			isa = PBXGroup;
+			children = (
+				8704AFBE28FB02E400E3AB08 /* DishDetailViewController.swift */,
+			);
+			path = "Dish Detail";
+			sourceTree = "<group>";
+		};
 		871C5AEF28E88EC9000BC7AB /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -102,6 +114,7 @@
 		871C5AF028E88EDB000BC7AB /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				8704AFBD28FB028C00E3AB08 /* Dish Detail */,
 				879D8B7E28F46EC300A03DF2 /* Home */,
 				87567F8628F2EE6900493540 /* Onboarding */,
 				8792CE4828EE00ED008CAC9B /* Registration */,
@@ -190,6 +203,7 @@
 			isa = PBXGroup;
 			children = (
 				879D8B8D28F48B1600A03DF2 /* String+Extension.swift */,
+				8704AFC028FB059400E3AB08 /* UIViewController+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -344,12 +358,14 @@
 				87D957A128E850B100BFD9AE /* SceneDelegate.swift in Sources */,
 				871C5B0328E9AD39000BC7AB /* SignUpViewController.swift in Sources */,
 				87567F8828F2EE9800493540 /* OnboardingViewController.swift in Sources */,
+				8704AFBF28FB02E400E3AB08 /* DishDetailViewController.swift in Sources */,
 				87E35DB828EC346100BA4DD5 /* StViewController.swift in Sources */,
 				8791407928F9C03900FFFF0A /* DIshLandscapeCollectionViewCell.swift in Sources */,
 				87567F8D28F2F7A500493540 /* OnboardingCollectionViewCell.swift in Sources */,
 				879D8B8E28F48B1600A03DF2 /* String+Extension.swift in Sources */,
 				8791407228F9992000FFFF0A /* DishPortraitCollectionViewCell.swift in Sources */,
 				8791407528F99C9F00FFFF0A /* Dish.swift in Sources */,
+				8704AFC128FB059400E3AB08 /* UIViewController+Extension.swift in Sources */,
 				879D8B9128F49BBA00A03DF2 /* CardView.swift in Sources */,
 				879D8B8028F46F1000A03DF2 /* HomeViewController.swift in Sources */,
 			);
