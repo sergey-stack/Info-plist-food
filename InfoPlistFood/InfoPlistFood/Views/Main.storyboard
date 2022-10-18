@@ -244,6 +244,9 @@
                     <navigationItem key="navigationItem" title="Info Plist Food" id="t9A-wQ-ZVq">
                         <barButtonItem key="rightBarButtonItem" title="Item" image="cart.circle.fill" catalog="system" id="D5N-CK-7Oa">
                             <color key="tintColor" systemColor="systemRedColor"/>
+                            <connections>
+                                <segue destination="HRw-iM-mfz" kind="show" id="k6z-uY-f9C"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
@@ -349,6 +352,40 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zKF-IH-khP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="260.74766355140184" y="-965.44276457883382"/>
+        </scene>
+        <!--List Dishes View Controller-->
+        <scene sceneID="QQN-r6-c6u">
+            <objects>
+                <viewController storyboardIdentifier="ListDishesViewController" id="hxM-Qf-yQF" customClass="ListDishesViewController" customModule="InfoPlistFood" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="OHw-kR-ieg">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="puA-HI-uMd">
+                                <rect key="frame" x="0.0" y="44" width="428" height="882"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="hxM-Qf-yQF" id="V6a-nj-kwf"/>
+                                    <outlet property="delegate" destination="hxM-Qf-yQF" id="ofV-2P-YkA"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="u65-H3-kek"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="puA-HI-uMd" firstAttribute="leading" secondItem="u65-H3-kek" secondAttribute="leading" id="A2M-k8-8mH"/>
+                            <constraint firstItem="puA-HI-uMd" firstAttribute="top" secondItem="u65-H3-kek" secondAttribute="top" id="d2M-7c-UZl"/>
+                            <constraint firstItem="puA-HI-uMd" firstAttribute="trailing" secondItem="u65-H3-kek" secondAttribute="trailing" id="pjs-fs-Xl0"/>
+                            <constraint firstAttribute="bottom" secondItem="puA-HI-uMd" secondAttribute="bottom" id="r3x-rC-IWT"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="puA-HI-uMd" id="qQN-td-oK5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hMf-Lp-keL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1108.8785046728972" y="-965.44276457883382"/>
         </scene>
         <!--Onboarding View Controller-->
         <scene sceneID="IvV-Yp-m0m">
@@ -497,6 +534,41 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vCJ-WZ-q7I" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1546.2616822429907" y="-232.61339092872572"/>
+        </scene>
+        <!--List Orders View Controller-->
+        <scene sceneID="0hs-Hw-NQL">
+            <objects>
+                <viewController storyboardIdentifier="ListOrdersViewController" id="HRw-iM-mfz" customClass="ListOrdersViewController" customModule="InfoPlistFood" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="y7W-Im-h9U">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="sgz-YV-HDb">
+                                <rect key="frame" x="0.0" y="88" width="428" height="838"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="HRw-iM-mfz" id="J4l-Wf-r8X"/>
+                                    <outlet property="delegate" destination="HRw-iM-mfz" id="dYY-Qw-5nq"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="2Xl-yB-jS7"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="sgz-YV-HDb" firstAttribute="leading" secondItem="2Xl-yB-jS7" secondAttribute="leading" id="82z-d6-lwY"/>
+                            <constraint firstItem="sgz-YV-HDb" firstAttribute="trailing" secondItem="2Xl-yB-jS7" secondAttribute="trailing" id="EMF-f7-vRx"/>
+                            <constraint firstItem="sgz-YV-HDb" firstAttribute="top" secondItem="2Xl-yB-jS7" secondAttribute="top" id="r6z-PV-wTt"/>
+                            <constraint firstAttribute="bottom" secondItem="sgz-YV-HDb" secondAttribute="bottom" id="xnQ-VR-LtB"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="N3J-UP-xMt"/>
+                    <connections>
+                        <outlet property="tableView" destination="sgz-YV-HDb" id="GXv-gC-kzJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hlN-bf-hMy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-513.08411214953264" y="-233.26133909287259"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="zDi-wc-AGi">
