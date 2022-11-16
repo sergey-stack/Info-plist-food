@@ -11,10 +11,27 @@ struct NetworkService {
    static let shared = NetworkService()
     private init() {}
     
-    func myFirstRequest(comletion: @escaping(Result<[Dish], Error>) -> Void) {
-        request(route: .temp, method: .get,  completion: comletion)
+    func fetchAllCategories(completion: @escaping(Result<AllDishes, Error>)  -> Void) {
+        request(route: .fetchAllCategories, method: .get, completion: completion)
+        
     }
     
+    func placeOrder(dishId: String, coment: String, completion: @escaping(Result<Order, Error>) -> Void) {
+        let params = [ "name": coment]
+        request(route: .placeOrder(dishId), method: .post, parameters: params, completion: completion)
+        
+    }
+    
+    
+    func fetchCategoryDishes(categoryId: String, completion: @escaping(Result<[Dish], Error>) ->Void) {
+        request(route: .fetchCategoryDishes(categoryId), method: .get, completion: completion)
+    }
+    
+    func fetchOrders(completion: @escaping(Result<[Order],  Error>) -> Void) {
+        request(route: .fetchOrders, method: .get, completion: completion)
+        
+        
+    }
     
     private func request <T: Decodable>(route: Route,
                                       method: Method,
@@ -35,7 +52,7 @@ struct NetworkService {
             if let data = data {
                 result = .success(data)
                 let responseString = String(data: data, encoding: .utf8) ?? "Could not stringify our data"
-               // print("The response is\(responseString)")
+               print("The response is\(responseString)")
             } else if let error = error {
                 result = .failure(error)
                 print("This error is: \(error.localizedDescription)")
@@ -105,7 +122,7 @@ struct NetworkService {
                 urlComponent?.queryItems = params.map { URLQueryItem(name: $0, value: "\($1)") }
                 urlRequest.url = urlComponent?.url
                 
-            case .post, .delete, .patch:
+            case .post:
                 let bodyData = try? JSONSerialization.data(withJSONObject: params, options: [])
                 urlRequest.httpBody = bodyData
             }

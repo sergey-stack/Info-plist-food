@@ -90,7 +90,11 @@ class SignUpViewController: UIViewController {
                 
             }
             else {
-                self.performSegue(withIdentifier: "goToMain", sender: self)
+               // self.performSegue(withIdentifier: "goToMain", sender: self)
+                let storyboard = UIStoryboard(name: "Main", bundle: nil)
+                let vc = storyboard.instantiateViewController(withIdentifier: "go")
+                self.navigationController?.pushViewController(vc, animated: true)
+                
             }
         }
     }

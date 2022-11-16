@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Yzt-6u-brU">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="8CL-nf-DLl">
     <device id="retina6_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
@@ -267,7 +267,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qMh-3o-ay4">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="qMh-3o-ay4">
                                 <rect key="frame" x="0.0" y="0.0" width="428" height="670"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="ipo-jL-DZt">
@@ -299,7 +299,7 @@
                                         <color key="textColor" systemColor="systemGrayColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RwZ-QI-vow">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your coment" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RwZ-QI-vow">
                                         <rect key="frame" x="0.0" y="74" width="396" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="7M5-CZ-zjz"/>
@@ -390,7 +390,7 @@
         <!--Onboarding View Controller-->
         <scene sceneID="IvV-Yp-m0m">
             <objects>
-                <viewController id="GDy-5o-9hp" customClass="OnboardingViewController" customModule="InfoPlistFood" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="go" useStoryboardIdentifierAsRestorationIdentifier="YES" id="GDy-5o-9hp" customClass="OnboardingViewController" customModule="InfoPlistFood" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Xg8-0y-Dx6">
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -588,11 +588,11 @@
             </objects>
             <point key="canvasLocation" x="-3775.233644859813" y="-233.26133909287259"/>
         </scene>
-        <!--Item 1-->
+        <!--Menu-->
         <scene sceneID="MGt-ha-dWl">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Yzt-6u-brU" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item 1" id="sQL-nw-iKg"/>
+                    <tabBarItem key="tabBarItem" title="Menu" id="sQL-nw-iKg"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="ibb-Xb-QNH">
                         <rect key="frame" x="0.0" y="44" width="428" height="44"/>

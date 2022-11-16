@@ -22,9 +22,7 @@ class StViewController: UIViewController {
             self.performSegue(withIdentifier: "alreadyLoggedI", sender: self)
         }
         
-//        if Auth.auth().currentUser != nil {
-//            performSegue(withIdentifier: "alreadyLoggedIn", sender: nil)
-//        }
+
     }
     
     override func viewDidLayoutSubviews() {
