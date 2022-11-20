@@ -8,7 +8,6 @@
 import UIKit
 
 class CardView: UIView {
-    
     override init(frame: CGRect) {
         super.init(frame: frame)
         initialSetup()
@@ -25,9 +24,5 @@ class CardView: UIView {
         layer.cornerRadius = 10
         layer.shadowOpacity = 0.1
         layer.shadowRadius = 10
-        
-        
     }
-    
 }
-

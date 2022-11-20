@@ -8,16 +8,15 @@
 import UIKit
 
 class DIshLandscapeCollectionViewCell: UICollectionViewCell {
-    
     static let identifier = "DIshLandscapeCollectionViewCell"
     
-    @IBOutlet weak var dishImageView: UIImageView!
+    @IBOutlet var dishImageView: UIImageView!
     
-    @IBOutlet weak var titleLbl: UILabel!
+    @IBOutlet var titleLbl: UILabel!
     
-    @IBOutlet weak var descriptionLbl: UILabel!
+    @IBOutlet var descriptionLbl: UILabel!
     
-    @IBOutlet weak var caloriesLbl: UILabel!
+    @IBOutlet var caloriesLbl: UILabel!
     
     func setup(dish: Dish) {
         dishImageView.kf.setImage(with: dish.image?.asUrl)
@@ -25,5 +24,4 @@ class DIshLandscapeCollectionViewCell: UICollectionViewCell {
         descriptionLbl.text = dish.description
         caloriesLbl.text = dish.formattedCalories
     }
-
 }

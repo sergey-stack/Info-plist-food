@@ -12,7 +12,7 @@ enum AppErro: LocalizedError {
     case unknowError
     case invalidUrl
     case serverError(String)
-    
+
     var errorDescription: String? {
         switch self {
         case .errorDecoding:
@@ -22,8 +22,7 @@ enum AppErro: LocalizedError {
         case .invalidUrl:
             return "Give me a valid Url"
         case .serverError(let error):
-           return error
+            return error
         }
     }
-    
 }

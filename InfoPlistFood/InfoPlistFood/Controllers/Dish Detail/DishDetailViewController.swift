@@ -5,30 +5,27 @@
 //  Created by сергей on 15.10.22.
 //
 
-import UIKit
 import ProgressHUD
+import UIKit
 
 class DishDetailViewController: UIViewController {
+    @IBOutlet var dishImageView: UIImageView!
     
+    @IBOutlet var titleLbl: UILabel!
     
-    @IBOutlet weak var dishImageView: UIImageView!
+    @IBOutlet var caloriesLbl: UILabel!
     
-    @IBOutlet weak var titleLbl: UILabel!
+    @IBOutlet var descriptionLbl: UILabel!
     
-    @IBOutlet weak var caloriesLbl: UILabel!
-    
-    @IBOutlet weak var descriptionLbl: UILabel!
-    
-    @IBOutlet weak var nameField: UITextField!
+    @IBOutlet var nameField: UITextField!
     
     var dish: Dish!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         populateView()
-
-        
     }
+
     private func populateView() {
         dishImageView.kf.setImage(with: dish.image?.asUrl)
         titleLbl.text = dish.name
@@ -36,29 +33,24 @@ class DishDetailViewController: UIViewController {
         caloriesLbl.text = dish.formattedCalories
     }
     
-    
     @IBAction func placeOrderBtn(_ sender: UIButton) {
         guard let coment = nameField.text?.trimmingCharacters(in: .whitespaces),
-              !coment.isEmpty else {
+              !coment.isEmpty
+        else {
             ProgressHUD.showError("Please enter your name")
             return
         }
         
         ProgressHUD.show("Placing order...")
         NetworkService.shared.placeOrder(dishId: dish.id ?? "", coment: coment) {
-        (result) in
+            result in
             switch result {
-            case .success(_):
+            case .success:
                 ProgressHUD.showSuccess("Your order has been received.👨‍🍳")
-                
-                
                 
             case .failure(let error):
                 ProgressHUD.showError(error.localizedDescription)
             }
         }
     }
-    
-  
-
 }

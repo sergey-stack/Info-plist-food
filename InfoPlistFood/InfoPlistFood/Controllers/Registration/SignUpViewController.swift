@@ -13,20 +13,21 @@ class SignUpViewController: UIViewController {
     
     @IBOutlet var emailTF: UITextField!
     
-    @IBOutlet weak var errorLblEmail: UILabel!
+    @IBOutlet var errorLblEmail: UILabel!
     
     @IBOutlet var passwordTF: UITextField!
     
-    @IBOutlet weak var errorLblPassword: UILabel!
+    @IBOutlet var errorLblPassword: UILabel!
     
     @IBOutlet var repeatPasswordTF: UITextField!
     
-    @IBOutlet weak var errorLblRepeatePassword: UILabel!
-    @IBOutlet weak var continueSignUp: UIButton!
+    @IBOutlet var errorLblRepeatePassword: UILabel!
+    @IBOutlet var continueSignUp: UIButton!
     
     // MARK: -  Properties
-    private var isValidEmail = false { didSet {updateContinueBtnState() }}
-    private var isConfPass = false { didSet { updateContinueBtnState()  }}
+
+    private var isValidEmail = false { didSet { updateContinueBtnState() }}
+    private var isConfPass = false { didSet { updateContinueBtnState() }}
     private var pass = false { didSet { updateContinueBtnState() }}
     
     // MARK: - Life Cycle
@@ -59,9 +60,7 @@ class SignUpViewController: UIViewController {
             pass = false
         }
         errorLblPassword.isHidden = pass
-
     }
-    
     
     @IBAction func passwordRepeatAction(_ sender: UITextField) {
         if let passTexts = sender.text,
@@ -73,9 +72,7 @@ class SignUpViewController: UIViewController {
             isConfPass = false
         }
         errorLblRepeatePassword.isHidden = isConfPass
-
     }
-    
     
     @IBAction func signUpAction(_ sender: UIButton) {
         guard nameTF.text != nil else { return }
@@ -84,32 +81,18 @@ class SignUpViewController: UIViewController {
         Auth.auth().createUser(withEmail: email, password: password) { _, error in
             if let error = error {
                 let alertController = UIAlertController(title: "You are already registered", message: error.localizedDescription, preferredStyle: .alert)
-                            let defaulAction = UIAlertAction(title: "Ok", style: .cancel, handler: nil)
-                            alertController.addAction(defaulAction)
+                let defaulAction = UIAlertAction(title: "Ok", style: .cancel, handler: nil)
+                alertController.addAction(defaulAction)
                 self.present(alertController, animated: true, completion: nil)
-                
-            }
-            else {
-               // self.performSegue(withIdentifier: "goToMain", sender: self)
+            } else {
                 let storyboard = UIStoryboard(name: "Main", bundle: nil)
                 let vc = storyboard.instantiateViewController(withIdentifier: "go")
                 self.navigationController?.pushViewController(vc, animated: true)
-                
             }
         }
     }
     
-    /*
-     // MARK: - Navigation
-
-     // In a storyboard-based application, you will often want to do a little preparation before navigation
-     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-         // Get the new view controller using segue.destination.
-         // Pass the selected object to the new view controller.
-     }
-     */
     private func updateContinueBtnState() {
         continueSignUp.isEnabled = isValidEmail && isConfPass && pass
     }
-    
 }

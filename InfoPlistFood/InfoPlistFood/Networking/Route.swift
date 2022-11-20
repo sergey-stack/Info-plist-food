@@ -18,15 +18,13 @@ enum Route {
     var description: String {
         switch self {
         case .fetchAllCategories:
-            return "/dish-categories"//возврат все категории из апи(бз)
+            return "/dish-categories" // возврат все категории из апи(бз)
         case .placeOrder(let dishId):
-            return "/orders/\(dishId)"//добавляем заказ в бз
+            return "/orders/\(dishId)" // добавляем заказ в бз
         case .fetchCategoryDishes(let categoryId):
-            return "/dishes/\(categoryId)"//возвр блюда по кат
+            return "/dishes/\(categoryId)" // возвр блюда по кат
         case .fetchOrders:
-            return "/orders"//возв заказы
-            
+            return "/orders" // возв заказы
         }
-        
     }
 }
