@@ -12,8 +12,8 @@ class StartViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-//        if Auth.auth().currentUser != nil {
-//            self.performSegue(withIdentifier: "alreadyLoggedIn", sender: nil)
-//        }
+       if Auth.auth().currentUser != nil {
+            self.performSegue(withIdentifier: "alreadyLoggedIn", sender: nil)
+       }
     }
 }

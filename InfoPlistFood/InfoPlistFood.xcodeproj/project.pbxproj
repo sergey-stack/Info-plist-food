@@ -18,6 +18,7 @@
 		871C5AFF28E9A9B0000BC7AB /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 871C5AFE28E9A9B0000BC7AB /* StartViewController.swift */; };
 		871C5B0128E9AA8B000BC7AB /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 871C5B0028E9AA8B000BC7AB /* SignInViewController.swift */; };
 		871C5B0328E9AD39000BC7AB /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 871C5B0228E9AD39000BC7AB /* SignUpViewController.swift */; };
+		8749D7C9292AB0940068B221 /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8749D7C8292AB0940068B221 /* AccountViewController.swift */; };
 		87567F8828F2EE9800493540 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87567F8728F2EE9800493540 /* OnboardingViewController.swift */; };
 		87567F8A28F2F3BC00493540 /* OnboardingSlide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87567F8928F2F3BC00493540 /* OnboardingSlide.swift */; };
 		87567F8D28F2F7A500493540 /* OnboardingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87567F8C28F2F7A500493540 /* OnboardingCollectionViewCell.swift */; };
@@ -64,6 +65,7 @@
 		871C5AFE28E9A9B0000BC7AB /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
 		871C5B0028E9AA8B000BC7AB /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		871C5B0228E9AD39000BC7AB /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		8749D7C8292AB0940068B221 /* AccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
 		87567F8728F2EE9800493540 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 		87567F8928F2F3BC00493540 /* OnboardingSlide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingSlide.swift; sourceTree = "<group>"; };
 		87567F8C28F2F7A500493540 /* OnboardingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -247,6 +249,7 @@
 				871C5B0228E9AD39000BC7AB /* SignUpViewController.swift */,
 				879569BF28EAA4E90028805B /* ForgotPassViewController.swift */,
 				87FC939728EA0F3300E512E3 /* VerificationService.swift */,
+				8749D7C8292AB0940068B221 /* AccountViewController.swift */,
 			);
 			path = Registration;
 			sourceTree = "<group>";
@@ -495,6 +498,7 @@
 			files = (
 				879D8B9428F5B76A00A03DF2 /* CategoryCollectionViewCell.swift in Sources */,
 				87567F8A28F2F3BC00493540 /* OnboardingSlide.swift in Sources */,
+				8749D7C9292AB0940068B221 /* AccountViewController.swift in Sources */,
 				87D9579F28E850B100BFD9AE /* AppDelegate.swift in Sources */,
 				877166262911738400255618 /* AllDishes.swift in Sources */,
 				87F1E126290AE398002CE084 /* ApiResponse.swift in Sources */,
