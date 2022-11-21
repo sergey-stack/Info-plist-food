@@ -7,14 +7,18 @@ Screens Sign In and Sign Up
 
 
 
+<img width="431" alt="Снимок экрана 2022-11-21 в 20 25 18" src="https://user-images.githubusercontent.com/109229621/203122120-ff581606-9585-4462-aee1-123d0d0a2d67.png">,<img width="475" alt="Снимок экрана 2022-11-21 в 20 26 21" src="https://user-images.githubusercontent.com/109229621/203122199-4b8667d4-fe73-4376-b518-d1d2e076e25a.png">
+
+
+
+
 
 
 Screens Onboarding
 
 
 
-Screen users interface 
-
+Screen users interface
 
 <img width="475" alt="Снимок экрана 2022-11-21 в 20 20 55" src="https://user-images.githubusercontent.com/109229621/203120041-329095c8-3c6e-492e-85da-996084d71409.png">
 
