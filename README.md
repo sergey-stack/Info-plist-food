@@ -18,6 +18,11 @@ Screens Onboarding
 
 
 
+
+
+
+
+
 Screen users interface
 
 <img width="475" alt="Снимок экрана 2022-11-21 в 20 20 55" src="https://user-images.githubusercontent.com/109229621/203120041-329095c8-3c6e-492e-85da-996084d71409.png">
